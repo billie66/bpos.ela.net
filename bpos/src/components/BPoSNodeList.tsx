@@ -82,19 +82,17 @@ export default async function BPoSNodeList({
             </div>
             <div className='mb-2'>
               <div className='text-[14px] opacity-80'>Register height</div>
-              <code className='text-sm opacity-50 break-words'>
-                {node.registerheight}
-              </code>
+              <code className='text-sm opacity-50'>{node.registerheight}</code>
             </div>
             <div className='mb-2'>
               <div className='text-[14px] opacity-80'>Owner public key</div>
-              <code className='text-sm opacity-50 break-words'>
+              <code className='text-sm opacity-50 break-all'>
                 {node.ownerpublickey}
               </code>
             </div>
             <div className='mb-2'>
               <div className='text-[14px] opacity-80'>Node public key</div>
-              <code className='text-sm opacity-50 break-words'>
+              <code className='text-sm opacity-50 break-all'>
                 {node.nodepublickey}
               </code>
             </div>
