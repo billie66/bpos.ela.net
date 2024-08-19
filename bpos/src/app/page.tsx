@@ -1,9 +1,10 @@
 import { fetchNodes } from "@/lib/actions";
 import BPoSNodeList from "@/components/BPoSNodeList";
+import { unstable_noStore as noStore } from "next/cache";
 
 export default async function Home() {
+  noStore();
   const nodeList = await fetchNodes();
-
   return (
     <main className='flex min-h-screen flex-col items-center p-24'>
       <div className='mb-4 z-10 w-full max-w-5xl items-center justify-between font-mono text-xl lg:flex'>
